@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Play With Words</title>
+    <title>Play With words!</title>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
@@ -12,11 +12,29 @@
       <header>
         <h1>Lets Play a Game!</h1>
       </header>
-      
+        <div>
           <button id="Start" class="btn">Start Round</button>
+        </div>
+        <!--- display: none keeps box from appearing until button is activated --->
+        <div id="countDown" style="display:none">
+          <h2><span id="timeRemaining">60</span> seconds remaining!</h2>
+          <div>
+            <fieldset id="questionBlock">
+              <p><span id="questionText"></span></p>
+              <button id="optionA" value="A"></button>
+              <button id="optionB" value="B"></button>
+              <button id="optionC" value="C"></button>
+              <button id="optionD" value="D"></button>
+            </fieldset>
+          </div>
+        </div>
+        <div id="results" style="display:none">
+          <h2>Your results!</h2>
+          <p>You got <span id="numberOfCorrect"></span> correct.</p>
         </div>
       </div>
     </div>
     <script src="./assets/script.js"></script>
   </body>
 </html>
+<!DOCTYPE html>

@@ -2,8 +2,10 @@
 var generateBtn = document.querySelector("#Start")
 
 //Variables
-var test = ""
-
+var response = [];
+var seconds = 60;
+var timededuct = 0;
+var current question = 0;
 //Questions
 var questionBank = 
     [{Q:"How do you indicate the start and end of a code block?",
@@ -16,12 +18,18 @@ var questionBank =
        A:"answer about javaScript"}
     ]
 
-// Game function
-var run = function () {
+// Game functions
+var showQuestion = function (questionIndex) {
+    document.getElementById('questionText') questions[questionIndex].Question
+    document.getElementById('optionA').textContent
     console.log ("good")
-    for (var i = 0; i < questionBank.length; i++){
+    
+    //for (var i = 0; i < questionBank.length; i++){
         console.log(questionBank[i].Q) 
         prompt(questionBank[i].Q)
+    
+    
+    //console.log ("True")
     }
 
 }
